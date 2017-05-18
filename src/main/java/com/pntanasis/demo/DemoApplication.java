@@ -9,13 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author master
  */
 @SpringBootApplication
-public final class DemoApplication {
-
-    /**
-     * Demo app.
-     */
-    private DemoApplication() {
-    }
+public class DemoApplication {
 
     /**
      *
