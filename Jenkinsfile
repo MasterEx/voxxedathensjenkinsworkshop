@@ -9,7 +9,7 @@ pipeline {
 		
 		stage('Unit test') {
 			steps {
-				sh './mnvw test'
+				sh './mvnw test'
 			}
 		}
 		
