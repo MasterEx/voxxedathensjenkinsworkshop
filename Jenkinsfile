@@ -30,5 +30,11 @@ pipeline {
 				sh 'docker build -t calculator .'
 			}
 		}
+		
+		stage('Docker push') {
+			stage {
+				sh 'docker push 10.0.2.15:5000/calculator'
+			}
+		}
 	}
 }
