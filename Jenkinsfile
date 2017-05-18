@@ -24,5 +24,11 @@ pipeline {
 				sh './mvnw clean package'
 			}
 		}
+		
+		stage('Docker image') {
+			steps {
+				sh 'docker build -t calculator .
+			}
+		}
 	}
 }
