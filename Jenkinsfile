@@ -27,13 +27,13 @@ pipeline {
 		
 		stage('Docker image') {
 			steps {
-				sh 'docker build -t calculator .'
+				sh 'docker build -t 127.0.0.1:5000/calculator .'
 			}
 		}
 		
 		stage('Docker push') {
 			stage {
-				sh 'docker push 10.0.2.15:5000/calculator'
+				sh 'docker push 127.0.0.1:5000/calculator'
 			}
 		}
 	}
