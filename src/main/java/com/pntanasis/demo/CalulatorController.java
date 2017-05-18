@@ -17,9 +17,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalulatorController {
 
+    /**
+     *
+     * @param a an int
+     * @param b an int
+     * @return sum of numbers
+     */
     @RequestMapping(value = "/sum", method = RequestMethod.GET)
-    public Integer sum(@RequestParam(value = "a", required = true) Integer a,
-            @RequestParam(value = "b", required = true) Integer b) {
+    public final Integer sum(
+            @RequestParam(value = "a", required = true) final Integer a,
+            @RequestParam(value = "b", required = true) final Integer b) {
         return a + b;
     }
 

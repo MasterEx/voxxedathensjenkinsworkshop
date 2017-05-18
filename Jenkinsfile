@@ -13,6 +13,12 @@ pipeline {
 			}
 		}
 		
+		stage('Check style') {
+			steps {
+				sh './mvnw checkstyle:check'
+			}
+		}
+		
 		stage('Build package') {
 			steps {
 				sh './mvnw clean package'
