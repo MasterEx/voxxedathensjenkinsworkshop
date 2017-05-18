@@ -49,6 +49,9 @@
                         </reports>
                     </reportSet>
                 </reportSets>
+                <configuration>
+                    <excludes>**/DemoApplication.java</excludes>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>

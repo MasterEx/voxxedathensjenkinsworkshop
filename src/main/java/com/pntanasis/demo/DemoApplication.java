@@ -12,6 +12,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication {
 
     /**
+     * Member to supress checsktyle warnings.
+     */
+    private int a = 1;
+
+    /**
      *
      * @param args the arguments
      */
